@@ -1,7 +1,8 @@
 # inetgeek.github.io
 Colyn's Blog-Official
+[blog.inetgeek.cn](http://blog.inetgeek.cn)
 
-> Hi, I'm Colyn, whose id is inetgeek.
+> **Hi, I'm Colyn, whose id is inetgeek.**
 
 ## Tech-Stack
 - [hexo](https://hexo.io/) (blog-driver)
