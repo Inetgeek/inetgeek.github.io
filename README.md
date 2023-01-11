@@ -9,7 +9,7 @@ Colyn's Blog-Official
 - [stellar](https://github.com/xaoxuu/hexo-theme-stellar) (themes)
 - [Qexo](https://github.com/Qexo/Qexo) (web-client)
 - [vercel](https://vercel.com/) (Serverless)
-- [Aliyun Colud](https://www.aliyun.com) (DNS)
+- [Aliyun Cloud](https://www.aliyun.com) (DNS)
 - [Github Pages & Github Actions](https://github.com) (Web Hosting)
 
 -----
