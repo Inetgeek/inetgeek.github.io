@@ -30,8 +30,8 @@
 <meta property="og:site_name" content="Colyn&#39;s Blog">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-13T20:07:38.835Z">
-<meta property="article:modified_time" content="2023-01-13T20:07:38.835Z">
+<meta property="article:published_time" content="2023-01-13T20:47:58.351Z">
+<meta property="article:modified_time" content="2023-01-13T20:47:58.351Z">
 <meta property="article:author" content="Colyn">
 <meta property="article:tag" content="‘Colyn, Colyn&#39;s Blog, InetGeek, inetgeek, Inetgeek, blog.inetgeek.cn’">
 <meta name="twitter:card" content="summary">
@@ -100,7 +100,7 @@
       
 
 
-<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-01-13T20:07:38.835Z">2023-01-13</time></div></div>
+<div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-01-13T20:47:58.351Z">2023-01-13</time></div></div>
 
 <article class='md-text content post'>
 <h1 class="article-title"><span>Hello World</span></h1>
@@ -135,6 +135,18 @@
     <div class="related-posts"><a class="item" href="/2023/01/13/about-index/" title="about/index"><span class="title">about/index</span></a></div></section></div>
 
 
+
+  <div class='related-wrap md-text reveal' id="comments">
+    <section class='header cmt-title cap theme'>
+      快来参与讨论吧
+    </section>
+    <section class='body cmt-body waline'>
+      
+
+<div id="waline_container" class="waline_thread"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+
+    </section>
+  </div>
 
 
 
@@ -302,6 +314,48 @@
 
 
 <!-- optional -->
+
+  <script>
+  function load_comment(){
+    if(!document.getElementById("waline_container"))return;
+    stellar.loadCSS('https://unpkg.com/@waline/client@v2/dist/waline.css');
+    stellar.loadScript('https://unpkg.com/@waline/client@v2/dist/waline.js', {defer:true}).then(function () {
+      const el = document.getElementById("waline_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","serverURL":"https://comment.inetgeek.cn/","commentCount":true,"pageview":false,"dark":"auto","login":"enable","emoji":["https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs","https://unpkg.com/@waline/emojis@1.1.0/weibo","https://unpkg.com/@waline/emojis@1.1.0/alus","https://unpkg.com/@waline/emojis@1.1.0/bilibili","https://unpkg.com/@waline/emojis@1.1.0/qq","https://unpkg.com/@waline/emojis@1.1.0/tieba","https://unpkg.com/@waline/emojis@1.1.0/tw-emoji","https://unpkg.com/@waline/emojis@1.1.0/bmoji"],"imageUploader":{"fileName":"file","tokenName":"token","api":"https://tucang.cc/api/v1/upload","token":"167363461177035426575e8cd491399a1299aef65b0a3","resp":"data.url"}}, {
+        el: '#waline_container',
+        path: path,
+        
+          imageUploader: function(file) {
+            let headers = new Headers();
+            headers.set('Accept', 'application/json');
+            
+              headers.set('token', '167363461177035426575e8cd491399a1299aef65b0a3')
+            
+            let formData = new FormData();
+            formData.append('file', file);
+            formData.append('token', '167363461177035426575e8cd491399a1299aef65b0a3');
+            return fetch('https://tucang.cc/api/v1/upload',{
+              method: 'POST',
+              body: formData,
+              headers: headers
+              }).then((resp) => resp.json())
+                .then((resp) => resp.data.url)
+          },
+        
+      }));
+    });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed');
+    load_comment();
+  });
+
+</script>
+
 
 
 

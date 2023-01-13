@@ -6,7 +6,6 @@ var arg_3 = 'margin-top:8px';
 var arg_4 = 'color:#e8fafe;background:#00dfb0;padding:8px;border-radius:0px';
 var arg_5 = 'color:#ffffff;background:#ffa12b;padding:8px;border-radius:0px';
 console.log(log, arg_1, arg_2, arg_3, arg_4, arg_5);
-
 // utils
 const util = {
 
