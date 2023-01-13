@@ -1,4 +1,11 @@
-console.log('\n' + '%c Stellar v' + stellar.version + ' %c\n' + stellar.github + '\n', 'color:#e8fafe;background:#03c7fa;padding:8px;border-radius:4px', 'margin-top:8px');
+// browser console log info
+var log = '%c Welcome %c Colyn\'s Blog %c\n\n%c GITHUB %c http://github.com/inetgeek';
+var arg_1 = 'color:#e8fafe;background:#03c7fa;padding:8px;border-radius:0px';
+var arg_2 = 'color:#e8fafe;background:#ff86ff;padding:8px;border-radius:0px';
+var arg_3 = 'margin-top:8px';
+var arg_4 = 'color:#e8fafe;background:#00dfb0;padding:8px;border-radius:0px';
+var arg_5 = 'color:#ffffff;background:#ffa12b;padding:8px;border-radius:0px';
+console.log(log, arg_1, arg_2, arg_3, arg_4, arg_5);
 // utils
 const util = {
 
