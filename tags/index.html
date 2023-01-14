@@ -56,6 +56,8 @@
 
   
     
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css">
+    
       <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
     
   
@@ -101,10 +103,18 @@
   
   
 
-<div class="nav-wrap"><nav class="sub post cap"><a href="/">近期发布</a><a class="active" href="/tags">标签</a><a href="/archives">归档</a><a href="/friends/rss/">朋友文章</a></nav></div>
+<div class="nav-wrap"><nav class="sub post cap"><a href="/">近期发布</a><a href="/categories">分类</a><a class="active" href="/tags">标签</a><a href="/archives">归档</a><a href="/friends/rss/">朋友文章</a><a href="/lab/">实验室</a></nav></div>
 
   <div class='post-list'>
     <article class='' id='tags'>
+      
+        <a class='tag' href="/tags/%E6%96%87%E7%AB%A0%E6%B5%8B%E8%AF%95/">
+          <span class='name'>文章测试</span>
+        </a>
+      
+        <a class='tag' href="/tags/demo/">
+          <span class='name'>demo</span>
+        </a>
       
         <a class='tag' href="/tags/xxx/">
           <span class='name'>xxx</span>
@@ -123,7 +133,10 @@
 
 
       
-<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">博客</span><a href="/">近期</a><a href="/">分类</a><a href="/">标签</a><a href="/">归档</a></div><div class="sitemap-group"><span class="fs14">项目</span><a href="/">开源库</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/">友链</a><a href="/">留言板</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/">关于本站</a><a href="/">GitHub</a></div></div><div class="text"><p>本站由 <a href="/">@anonymity</a> 使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar">Stellar</a> 主题创建。<br>本博客所有文章除特别声明外，均采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议，转载请注明出处。</p>
+<footer class="page-footer reveal fs12"><hr><div class="sitemap"><div class="sitemap-group"><span class="fs14">文章</span><a href="/">近期</a><a href="/">分类</a><a href="/">标签</a><a href="/">归档</a></div><div class="sitemap-group"><span class="fs14">项目</span><a href="/">开源库</a></div><div class="sitemap-group"><span class="fs14">社交</span><a href="/">友链</a><a href="/">留言板</a></div><div class="sitemap-group"><span class="fs14">更多</span><a href="/">关于本站</a><a href="/">GitHub</a></div></div><div class="text"><center>
+  <p>本站由 <a target="_blank" rel="noopener" href="https://github.com/inetgeek" style="color:#ff4b22;text-decoration:none;">@Colyn</a>使用<a target="_blank" rel="noopener" href="https://hexo.io" style="color:#ff4b22;text-decoration:none;">hexo</a>创建, <span id="span"></span><script type="text/javascript">function runtime(){X = new Date("2023-01-01 00:00:00");Y = new Date();T = (Y.getTime()-X.getTime());M = 24*60*60*1000;a = T/M;A = Math.floor(a);b = (a-A)*24;B = Math.floor(b);c = (b-B)*60;C = Math.floor((b-B)*60);D = Math.floor((c-C)*60);span.innerHTML = "🛰️已在宇宙深处飘了"+A+"天"+B+"小时"+C+"分"+D+"秒"}setInterval(runtime, 1000);</script></p>
+  <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Colyn(InetGeek), All Rights Reserved.</p>
+<center>
 </div></footer>
 
       <div class='float-panel mobile-only blur' style='display:none'>
@@ -290,6 +303,32 @@
 
 
 <!-- inject -->
+
+  
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+  
+    <script>
+    document.body.oncopy = function () {
+        iziToast.info({
+            timeout: 4000, // 关闭弹窗的时间
+            //icon: 'Fontawesome', // 图标类别
+            closeOnEscape: 'true', // 允许使用Esc键关闭弹窗
+            transitionIn: 'bounceInLeft', // 弹窗打开动画
+            transitionOut: 'fadeOutRight', // 弹窗关闭动画
+            displayMode: 'replace', // 替换已经打开的弹窗
+            layout: '2', // Medium模式
+            position: 'topRight', // 弹窗位置
+            //icon: 'fad fa-copy', // 图标类名
+            iconUrl:'https://image-1309791158.cos.ap-guangzhou.myqcloud.com/其他/1122star.svg',
+            backgroundColor: '#00ffce', // 弹窗背景色
+            color: '#000000',
+            title: '复制成功', // 通知标题
+            message: '复制原创内容后请注明来源' // 通知消息内容
+        });
+    }
+</script>
+
+  
 
 
   </div>
