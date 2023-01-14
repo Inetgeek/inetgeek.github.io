@@ -31,7 +31,7 @@
 <meta property="og:description" content="666">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-01-13T03:45:38.000Z">
-<meta property="article:modified_time" content="2023-01-13T20:53:46.496Z">
+<meta property="article:modified_time" content="2023-01-14T10:43:55.375Z">
 <meta property="article:author" content="Colyn">
 <meta property="article:tag" content="xxx">
 <meta property="article:tag" content="test">
@@ -88,7 +88,7 @@
 
 
 
-<widget class="widget-wrapper recent"><div class="widget-header cap theme dis-select"><span class="name">最近更新</span></div><div class="widget-body related-posts fs14"><a class="item title" href="/2023/01/13/about-index/"><span class="title">about/index</span></a><a class="item title" href="/2023/01/13/hello-world/"><span class="title">Hello World</span></a><a class="item title" href="/2023/01/13/test/"><span class="title">test</span></a></div></widget>
+<widget class="widget-wrapper recent"><div class="widget-header cap theme dis-select"><span class="name">最近更新</span></div><div class="widget-body related-posts fs14"><a class="item title" href="/2023/01/13/about-index/"><span class="title">about/index</span></a><a class="item title" href="/2023/01/14/hello-world/"><span class="title">Hello World</span></a><a class="item title" href="/2023/01/13/test/"><span class="title">test</span></a></div></widget>
 
 
 
@@ -317,7 +317,7 @@
       if (!path) {
         path = decodeURI(window.location.pathname);
       }
-      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","serverURL":"https://comment.inetgeek.cn/","commentCount":true,"pageview":false,"dark":"auto","login":"enable","emoji":["https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs","https://unpkg.com/@waline/emojis@1.1.0/weibo","https://unpkg.com/@waline/emojis@1.1.0/alus","https://unpkg.com/@waline/emojis@1.1.0/bilibili","https://unpkg.com/@waline/emojis@1.1.0/qq","https://unpkg.com/@waline/emojis@1.1.0/tieba","https://unpkg.com/@waline/emojis@1.1.0/tw-emoji","https://unpkg.com/@waline/emojis@1.1.0/bmoji"],"imageUploader":{"fileName":"file","tokenName":"token","api":"https://tucang.cc/api/v1/upload","token":"167363461177035426575e8cd491399a1299aef65b0a3","resp":"data.url"}}, {
+      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","serverURL":"https://comment.inetgeek.cn/","commentCount":true,"pageview":false,"dark":"auto","login":"enable","emoji":["https://gcore.jsdelivr.net/gh/norevi/waline-blobcatemojis@1.0/blobs","https://unpkg.com/@waline/emojis@1.1.0/weibo","https://unpkg.com/@waline/emojis@1.1.0/alus","https://unpkg.com/@waline/emojis@1.1.0/bilibili","https://unpkg.com/@waline/emojis@1.1.0/qq","https://unpkg.com/@waline/emojis@1.1.0/tieba","https://unpkg.com/@waline/emojis@1.1.0/tw-emoji","https://unpkg.com/@waline/emojis@1.1.0/bmoji"],"imageUploader":{"fileName":"file","tokenName":"token","api":"https://tucang.cc/api/v1/upload","token":"167368520671758a44f813e9d4658bd5beaf8329b6444","resp":"data.url"}}, {
         el: '#waline_container',
         path: path,
         
@@ -325,11 +325,11 @@
             let headers = new Headers();
             headers.set('Accept', 'application/json');
             
-              headers.set('token', '167363461177035426575e8cd491399a1299aef65b0a3')
+              headers.set('token', '167368520671758a44f813e9d4658bd5beaf8329b6444')
             
             let formData = new FormData();
             formData.append('file', file);
-            formData.append('token', '167363461177035426575e8cd491399a1299aef65b0a3');
+            formData.append('token', '167368520671758a44f813e9d4658bd5beaf8329b6444');
             return fetch('https://tucang.cc/api/v1/upload',{
               method: 'POST',
               body: formData,
