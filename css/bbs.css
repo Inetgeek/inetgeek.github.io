@@ -1,0 +1,67 @@
+#bber-talk {
+    display: -webkit-flex;
+    display: flex;
+    
+    line-height: 35px;
+    height: 45px;
+    max-width: 760px;
+    text-align: left;
+    padding: 10px 0px;
+    margin: 0 0;
+    position: relative;
+    background-color: #3d3d3d;
+    border-radius: 8px;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+#bber-talk svg {
+    fill: currentColor;
+    vertical-align: middle;
+    display: inline;
+    margin-right: 5px;
+    margin-top: -4px;
+}
+
+.talk-wrap {
+    width: 96%;
+}
+
+.talk-list {
+    margin: 5px;
+    height: 30px;
+    color: #ffffff;
+}
+
+.talk-list li {
+    list-style: none;
+    margin-bottom: 10px;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.talk-list li .datetime {
+    margin-right: 1px;
+    color: #00e0a8;
+}
+
+.talk-list li a {
+    text-decoration: none;
+    overflow-x: hidden;
+    color: #f1f3f4;
+}
+
+.talk-list li a:hover {
+    text-decoration: none;
+    overflow: hidden;
+    color: #ff5931;
+}
+
+@media only screen and (max-width:683px) {
+    #bber-talk {
+        margin: 0em 0em 0em;
+    }
+}

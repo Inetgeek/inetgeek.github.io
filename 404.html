@@ -56,6 +56,8 @@
 
   
     
+      <link rel="stylesheet" href="css/bbs.css">
+    
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css">
     
       <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
@@ -73,7 +75,7 @@
 
   
 
-<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://s1.ax1x.com/2023/01/13/pSKFv1s.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Colyn's Blog</div><div class="sub normal cap">Just make it!</div><div class="sub hover cap" style="opacity:0"> Hi, I'm Colyn</div></a></div>
+<header class="header"><div class="logo-wrap"><a class="avatar" href="/about/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="https://s1.yesimg.com/2022/42ed407a8aaeb.jpg" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.4/image/2659360.svg';"></a><a class="title" href="/"><div class="main" ff="title">Colyn's Blog</div><div class="sub normal cap">Just make it!</div><div class="sub hover cap" style="opacity:0"> Hi, I'm Colyn</div></a></div>
 
 <nav class="menu dis-select"><a class="nav-item" href="/">文章</a><a class="nav-item" href="/wiki/">项目</a><a class="nav-item" href="/friends/">友链</a><a class="nav-item" href="/about/">关于</a></nav>
 </header>
@@ -82,7 +84,7 @@
 <div class="widgets">
 <widget class="widget-wrapper search"><div class="widget-body"><div class="search-wrapper" id="search"><form class="search-form"><input type="text" class="search-input" id="search-input" placeholder="文章搜索"><svg t="1670596976048" class="icon search-icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2676" width="200" height="200"><path d="M938.2 832.6L723.8 618.1c-2.5-2.5-5.3-4.4-7.9-6.4 36.2-55.6 57.3-121.8 57.3-193.1C773.3 222.8 614.6 64 418.7 64S64 222.8 64 418.6c0 195.9 158.8 354.6 354.6 354.6 71.3 0 137.5-21.2 193.2-57.4 2 2.7 3.9 5.4 6.3 7.8L832.5 938c14.6 14.6 33.7 21.9 52.8 21.9 19.1 0 38.2-7.3 52.8-21.8 29.2-29.1 29.2-76.4 0.1-105.5M418.7 661.3C284.9 661.3 176 552.4 176 418.6 176 284.9 284.9 176 418.7 176c133.8 0 242.6 108.9 242.6 242.7 0 133.7-108.9 242.6-242.6 242.6" p-id="2677"></path></svg></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div></div></widget>
 
-<widget class="widget-wrapper recent"><div class="widget-header cap theme dis-select"><span class="name">最近更新</span></div><div class="widget-body related-posts fs14"><a class="item title" href="/2023/01/13/about-index/"><span class="title">about/index</span></a><a class="item title" href="/2023/01/15/hello-world/"><span class="title">Hello World</span></a><a class="item title" href="/2023/01/13/test/"><span class="title">test</span></a></div></widget>
+<widget class="widget-wrapper recent"><div class="widget-header cap theme dis-select"><span class="name">最近更新</span></div><div class="widget-body related-posts fs14"><a class="item title" href="/2023/01/13/about-index/"><span class="title">about/index</span></a><a class="item title" href="/2023/01/17/hello-world/"><span class="title">Hello World</span></a><a class="item title" href="/2023/01/13/test/"><span class="title">test</span></a></div></widget>
 
 
 </div>
@@ -341,27 +343,9 @@
   
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
   
-    <script>
-    document.body.oncopy = function () {
-        iziToast.info({
-            timeout: 4000, // 关闭弹窗的时间
-            //icon: 'Fontawesome', // 图标类别
-            closeOnEscape: 'true', // 允许使用Esc键关闭弹窗
-            transitionIn: 'bounceInLeft', // 弹窗打开动画
-            transitionOut: 'fadeOutRight', // 弹窗关闭动画
-            displayMode: 'replace', // 替换已经打开的弹窗
-            layout: '2', // Medium模式
-            position: 'topRight', // 弹窗位置
-            //icon: 'fad fa-copy', // 图标类名
-            iconUrl:'https://image-1309791158.cos.ap-guangzhou.myqcloud.com/其他/1122star.svg',
-            backgroundColor: '#00ffce', // 弹窗背景色
-            color: '#000000',
-            title: '复制成功', // 通知标题
-            message: '复制原创内容后请注明来源' // 通知消息内容
-        });
-    }
-</script>
-
+    <script type="text/javascript" src="js/bbs.js"></script>
+  
+    <script src="https://fastly.jsdelivr.net/gh/Tokinx/Lately/lately.min.js"></script>
   
 
 
