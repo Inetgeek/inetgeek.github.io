@@ -31,9 +31,9 @@
 :root {
   --site-bg: #f9fafb;
   --card: #fff;
-  --block: #f2f2f2;
-  --block-border: #e6e6e6;
-  --block-hover: #ebebeb;
+  --block: #f1f2f3;
+  --block-border: #e3e5e8;
+  --block-hover: #e9eaec;
   --text-p0: #000;
   --text-p1: #333;
   --text-p2: #4d4d4d;
@@ -43,6 +43,25 @@
   --text-code: #f53900;
   --theme-bg2: #00e0a8;
   --theme-link: #00e0a8;
+}
+:root {
+  --site-bg: #1c1e21;
+  --card: #373d43;
+  --block: #26292c;
+  --block-border: #383d42;
+  --block-hover: #2f3337;
+  --text-p0: #fff;
+  --text-p1: #ccc;
+  --text-p2: #b3b3b3;
+  --text-p3: #858585;
+  --text-p4: #707070;
+  --text-meta: #4d4d4d;
+  --text-code: #ff6333;
+}
+@media screen and (max-width: 667px) {
+  :root {
+    --site-bg: #000;
+  }
 }
 pre {
   font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
@@ -117,6 +136,9 @@ blockquote {
 :root {
   --blur-px: 12px;
   --blur-bg: rgba(255,255,255,0.5);
+}
+:root {
+  --blur-bg: rgba(0,0,0,0.5);
 }
 .blur {
   background: var(--blur-bg);
@@ -273,6 +295,7 @@ a.button.start.gradient:hover:after {
   -moz-transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
+  --blur-bg: rgba(0,0,0,0.4);
 }
 .sidebar-toggle.mobile {
   cursor: pointer;
@@ -1729,6 +1752,106 @@ article.md-text.content+.related-wrap {
   --text-p1: #fff;
   --text-p2: #e0e0e0;
   --text-p3: #ddd;
+  --text-code: #fff;
+}
+.tag-plugin.tag {
+  --theme: #00e0a8;
+  --theme-bg1: #143d33;
+  --theme-bg2: #222f2c;
+  --theme-border: #1f5c4d;
+  --text-p0: #b3ffec;
+  --text-p1: #9fdfcf;
+  --text-p2: #7ef1d4;
+}
+.tag-plugin[color='red'] {
+  --theme: #f44336;
+  --theme-bg1: #3d1714;
+  --theme-bg2: #2f2322;
+  --theme-border: #5c231f;
+  --text-p0: #ffb8b3;
+  --text-p1: #dfa49f;
+  --text-p2: #f1867e;
+}
+.tag-plugin[color='orange'] {
+  --theme: #fa6400;
+  --theme-bg1: #3d2514;
+  --theme-bg2: #2f2722;
+  --theme-border: #5c371f;
+  --text-p0: #ffd1b3;
+  --text-p1: #dfb99f;
+  --text-p2: #f1ac7e;
+}
+.tag-plugin[color='yellow'] {
+  --theme: #ffbd2b;
+  --theme-bg1: #3d3014;
+  --theme-bg2: #2f2b22;
+  --theme-border: #5c491f;
+  --text-p0: #ffe7b3;
+  --text-p1: #dfcb9f;
+  --text-p2: #f1cd7e;
+}
+.tag-plugin[color='green'] {
+  --theme: #3dc550;
+  --theme-bg1: #143d1a;
+  --theme-bg2: #222f24;
+  --theme-border: #1f5c27;
+  --text-p0: #b3ffbd;
+  --text-p1: #9fdfa8;
+  --text-p2: #7ef18e;
+}
+.tag-plugin[color='cyan'] {
+  --theme: #1bcdfc;
+  --theme-bg1: #14353d;
+  --theme-bg2: #222d2f;
+  --theme-border: #1f4f5c;
+  --text-p0: #b3efff;
+  --text-p1: #9fd2df;
+  --text-p2: #7ed9f1;
+}
+.tag-plugin[color='blue'] {
+  --theme: #2196f3;
+  --theme-bg1: #142b3d;
+  --theme-bg2: #222a2f;
+  --theme-border: #1f415c;
+  --text-p0: #b3ddff;
+  --text-p1: #9fc3df;
+  --text-p2: #7ebef1;
+}
+.tag-plugin[color='purple'] {
+  --theme: #9c27b0;
+  --theme-bg1: #37143d;
+  --theme-bg2: #2d222f;
+  --theme-border: #531f5c;
+  --text-p0: #f4b3ff;
+  --text-p1: #d69fdf;
+  --text-p2: #e07ef1;
+}
+.tag-plugin[color='light'] {
+  --theme-border: #fff;
+  --theme-bg1: #e0e0e0;
+  --theme-bg2: #fff;
+  --text-p0: #000;
+  --text-p1: #111;
+  --text-p2: #1f1f1f;
+  --text-p3: #555;
+  --text-code: #fff;
+}
+.tag-plugin[color='dark'] {
+  --theme-border: #000;
+  --theme-bg1: #1f1f1f;
+  --theme-bg2: #111;
+  --text-p0: #fff;
+  --text-p1: #fff;
+  --text-p2: #e0e0e0;
+  --text-p3: #ddd;
+  --text-code: #fff;
+}
+.tag-plugin[color='warning'],
+.tag-plugin[color='light'] {
+  --text-p0: #000;
+  --text-p1: #111;
+  --text-p2: #1f1f1f;
+  --text-p3: #555;
   --text-code: #fff;
 }
 .md-text .tag-plugin.copy {
@@ -3226,6 +3349,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   transform: translateY(-1px);
   background: linear-gradient(145deg, #ddd, #fff);
   box-shadow: 2px 4px 8px #ddd, -2px -4px 8px #fff;
+  box-shadow: none;
 }
 .proj-wrap {
   display: grid;
@@ -3363,7 +3487,7 @@ nav.menu a.nav-item:hover {
     transform: rotate(360deg);
   }
 }
-.logo-wrap a.avatar:hover div.bg {
+.logo-wrap a.avatar div.bg {
   opacity: 1 !important;
   animation: spin infinite 4s;
   animation-timing-function: linear;
