@@ -39,15 +39,15 @@ h1 {
 
 blockquote {
     padding: 0em 0em 0.5em 0.5em;
-    width: 100%;
+    /* width: 95%; */
     line-height: 2;
     background-color: #2f3337;
     border-left: 0.5em solid #cccccc;
 }
 
-#main {
+/* #main {
     padding-top: 40px;
-}
+} */
 
 .theme-toggle {
     cursor: pointer;
@@ -80,10 +80,10 @@ blockquote {
 }
 
 .memos__content {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     margin-left: 50px;
     position: relative;
-    max-width: 90%;
+    max-width: 100%;
     border-radius: 40px;
     width: 90%;
 }
@@ -96,7 +96,7 @@ blockquote {
     width: 40px;
     height: 40px;
     border-radius: 40px;
-    left: -50px;
+    left: -52px;
     top: 10px;
     border: 0;
     object-fit: cover;
@@ -390,11 +390,6 @@ blockquote {
 }
 
 @media (max-width: 683px) {
-
-    body {
-        padding: 45px 50px 45px 20px;
-    }
-
     .menu,
     .title {
         font-size: 1rem;
