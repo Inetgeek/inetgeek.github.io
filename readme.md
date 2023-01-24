@@ -11,6 +11,7 @@ Colyn's Blog-Official:
 - [vercel](https://vercel.com/) (Serverless)
 - [Aliyun Cloud](https://www.aliyun.com) (DNS)
 - [Github Pages & Github Actions](https://github.com) (Web Hosting)
-
+- [memos](https://github.com/usememos/memos) (diary)
+- [fly.io](https://fly.io) (Docker Hosting)
 -----
 Copyright © 2022 Colyn(InetGeek), All Rights Reserved.
