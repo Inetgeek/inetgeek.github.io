@@ -303,43 +303,45 @@ stellar博客主题hexo博客驱动 stellar主题仓库
 <!-- optional -->
 
   <script>
-  function load_comment(){
-    if(!document.getElementById("waline_container"))return;
-    stellar.loadCSS('https://unpkg.com/@waline/client@v2/dist/waline.css');
-    stellar.loadScript('https://unpkg.com/@waline/client@v2/dist/waline.js', {defer:true}).then(function () {
-      const el = document.getElementById("waline_container");
-      var path = el.getAttribute('comment_id');
-      if (!path) {
-        path = decodeURI(window.location.pathname);
-      }
-      Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","serverURL":"https://comment.inetgeek.cn/","commentCount":true,"pageview":false,"locale":{"placeholder":"登录后评论，大陆用户须访问外网方可登录"},"dark":"true","login":"enable","emoji":["https://cdn.inetgeek.cn/hexo/emoji/blobcat","https://cdn.inetgeek.cn/hexo/waline/weibo","https://cdn.inetgeek.cn/hexo/waline/alus","https://cdn.inetgeek.cn/hexo/waline/bilibili","https://cdn.inetgeek.cn/hexo/waline/qq","https://cdn.inetgeek.cn/hexo/waline/tieba","https://cdn.inetgeek.cn/hexo/waline/tw-emoji","https://cdn.inetgeek.cn/hexo/waline/bmoji","https://cdn.inetgeek.cn/hexo/waline/tw-body"],"imageUploader":{"fileName":"image","tokenName":"token","api":"https://img.ink/api/upload","token":"49a6e224572c15342b0d6b5785218bcf","resp":"data.url"}}, {
-        el: '#waline_container',
-        path: path,
-        
-          imageUploader: function(file) {
-            let headers = new Headers();
-            headers.set('Accept', 'application/json');
-            
-              headers.set('token', '49a6e224572c15342b0d6b5785218bcf')
-            
-            let formData = new FormData();
-            formData.append('image', file);
-            formData.append('token', '49a6e224572c15342b0d6b5785218bcf');
-            return fetch('https://img.ink/api/upload',{
-              method: 'POST',
-              body: formData,
-              headers: headers
-              }).then((resp) => resp.json())
-                .then((resp) => resp.data.url)
-          },
-        
-      }));
+    function load_comment() {
+        if (!document.getElementById("waline_container")) return;
+        stellar.loadCSS('https://unpkg.com/@waline/client@v2/dist/waline.css');
+        stellar.loadScript('https://unpkg.com/@waline/client@v2/dist/waline.js', {defer: true}).then(function () {
+            const el = document.getElementById("waline_container");
+            var path = el.getAttribute('comment_id');
+            if (!path) {
+                path = decodeURI(window.location.pathname);
+            }
+            Waline.init(Object.assign({"js":"https://unpkg.com/@waline/client@v2/dist/waline.js","css":"https://unpkg.com/@waline/client@v2/dist/waline.css","serverURL":"https://comment.inetgeek.cn/","commentCount":true,"pageview":false,"locale":{"placeholder":"登录后评论，大陆用户须访问外网方可登录"},"dark":"true","login":"enable","emoji":["https://cdn.inetgeek.cn/hexo/emoji/blobcat","https://cdn.inetgeek.cn/hexo/waline/weibo","https://cdn.inetgeek.cn/hexo/waline/alus","https://cdn.inetgeek.cn/hexo/waline/bilibili","https://cdn.inetgeek.cn/hexo/waline/qq","https://cdn.inetgeek.cn/hexo/waline/tieba","https://cdn.inetgeek.cn/hexo/waline/tw-emoji","https://cdn.inetgeek.cn/hexo/waline/bmoji","https://cdn.inetgeek.cn/hexo/waline/tw-body"],"imageUploader":{"fileName":"image","tokenName":"token","api":"https://img.ink/api/upload","token":"49a6e224572c15342b0d6b5785218bcf","resp":"data.url"}}, {
+                el: '#waline_container',
+                path: path,
+                // 上传图片
+                
+                imageUploader: function (file) {
+                    let headers = new Headers();
+                    headers.set('Accept', 'application/json');
+                    
+                    headers.set('token', '49a6e224572c15342b0d6b5785218bcf')
+                    
+                    let formData = new FormData();
+                    formData.append('image', file);
+                    formData.append('token', '49a6e224572c15342b0d6b5785218bcf');
+                    return fetch('https://img.ink/api/upload', {
+                        method: 'POST',
+                        body: formData,
+                        headers: headers
+                    }).then((resp) => resp.json())
+                        .then((resp) => resp.data.url)
+                },
+                
+            }));
+        });
+    }
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+        console.log('DOM fully loaded and parsed');
+        load_comment();
     });
-  }
-  window.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed');
-    load_comment();
-  });
 
 </script>
 
